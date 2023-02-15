@@ -14,6 +14,6 @@ def get_highest_vote():
     # Get the JSON data from the response
     data = response.json()
     # Print the titles and scores of the top 10 questions
-    for i, item in enumerate(data['items'][:10]):
+    for i, item in enumerate(data['items'][:50]):
         print(f"{i+1}. {item['title']} {item['score']}")
 get_highest_vote()

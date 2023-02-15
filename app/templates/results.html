@@ -6,12 +6,12 @@
 </head>
 
 <body>
+    <button><a href="/">Back to home pages</a> </button>
     <h1>Search Results</h1>
     {% if results %}
     {% for result in results %}
-    <h2>{{ result.title }}</h2>
+    <h2><a href="{{ result.link }}">{{ result.title }}</a></h2>
     <p>Score: {{ result.score }}</p>
-    <p><a href="{{ result.link }}">View on Stack Overflow</a></p>
     <hr>
     {% endfor %}
     {% else %}
