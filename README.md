@@ -11,6 +11,6 @@ python get-question-highest-vote-stackoverflow-from-keyboard.py
 
 ```
 
-python get-question-highest-stackoverflow-use-argument.py 5 ansible
+python get-question-highest-stackoverflow-use-argument.py 5 django
 ```
 ![](./images/arg.PNG)
