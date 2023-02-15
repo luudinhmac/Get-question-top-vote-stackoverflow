@@ -21,8 +21,8 @@ def vote_highest_stackoverflow(number, topic):
         print(f"{i+1}. {item['title']} ({item['score']})\n{item['link']}\n")
 if __name__ == '__main__':
     # Prompt the user to enter a topic
-    topic = input('Enter a search topic')
+    topic = input('Enter a search topic: ')
     # user enter number of results
-    number = int(input("Enter number to search on Stack Overflow"))
+    number = int(input("Enter number to search on Stack Overflow: "))
 
     vote_highest_stackoverflow(number, topic)
