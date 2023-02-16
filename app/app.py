@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import requests
+from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
@@ -34,4 +35,6 @@ def search():
 
 
 if __name__ == '__main__':
-    app.run()
+    # app.run(debug=true)
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
